@@ -1,0 +1,12 @@
+{application, die_couchdb,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { die_couchdb_app, []}},
+  {env, []}
+ ]}.
