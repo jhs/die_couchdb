@@ -1,12 +1,13 @@
-{application, die_couchdb,
- [
-  {description, ""},
-  {vsn, "1"},
-  {registered, []},
-  {applications, [
-                  kernel,
-                  stdlib
-                 ]},
-  {mod, { die_couchdb_app, []}},
-  {env, []}
- ]}.
+{ application, die_couchdb
+, [ {description, "Completely shut down a CouchDB server"}
+  , {vsn, "0.1.0"}
+  , {registered, []}
+  , {applications, [ kernel
+                   , stdlib
+                   , die_couchdb
+                   ]
+    }
+  , {mod, die_couchdb_app, []}
+  , {env, []}
+  ]
+}.
